@@ -4,6 +4,10 @@ var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
+// 环境变量配置，dev / online
+var WEBPACK_ENV = process.env.WEBPACK_ENV || 'dev';
+console.log(WEBPACK_ENV);
+
 // 获取html-webpack-plugin参数的方法
 var getHtmlConfig = function(name) {
     return {
@@ -24,23 +28,24 @@ var config = {
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
+        publicPath: '/dist',
         filename: 'js/[name].js'
     },
     externals: {
         'jquery': 'window.jQuery'
     },
     module: {
-        // loaders: [
-        //     { test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader", "less-loader") }
-        // ]
         rules:[
             {
                 test:/\.css$/,
-                //注意：这里还需要更改一下
                 use:ExtractTextPlugin.extract({
                     fallback: "style-loader",
                     use: "css-loader"
                 })
+            },
+            {
+                test: /\.(gif|png|jpg|woff|svg|eot|ttf)\??.*$/,
+                use: 'url-loader?limit=100&name=resource/[name].[ext]'
             }
         ]
     },
@@ -57,5 +62,9 @@ var config = {
         new HtmlWebpackPlugin(getHtmlConfig('login'))
     ]
 };
+
+if ('dev' === WEBPACK_ENV) {
+    config.entry.common.push('webpack-dev-server/client?http://localhost:8088/');
+}
 
 module.exports = config;
