@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 使用html-loader从layout/html-head.html中加载header，可以避免在多个文件中重复代码 -->
+<%= require('html-loader!./layout/html-head.html') %>
+
+<body>
+    <script
+        src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
