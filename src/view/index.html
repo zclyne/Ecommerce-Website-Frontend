@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- 使用html-loader从layout/html-head.html中加载header，可以避免在多个文件中重复代码 -->
-<%= require('html-loader!./layout/html-head.html') %>
+<head>
+    <!-- 使用html-loader从layout/head-common.html中加载header，可以避免在多个文件中重复代码 -->
+    <%= require('html-loader!./layout/head-common.html') %>
+    <title>happymmall电商平台</title>
+</head>
 
 <body>
-    <script
-        src="https://code.jquery.com/jquery-1.12.4.min.js"
-        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-        crossorigin="anonymous"></script>
 
+    <!-- 引入导航栏 -->
+    <%= require('html-loader!./layout/nav.html') %>
+
+    <div>
+        <i class="fa fa-user"></i>
+    </div>
+
+
+    <!-- 引入footer -->
+    <%= require('html-loader!./layout/footer.html') %>
 </body>
 </html>

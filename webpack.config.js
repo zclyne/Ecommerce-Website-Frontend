@@ -21,6 +21,16 @@ var getHtmlConfig = function(name) {
 
 // webpack config
 var config = {
+    devServer: {
+        port: 8088,
+        inline: true,
+        proxy: {
+            '**/*.do': {
+                target: 'http://test.happymmall.com',
+                changeOrigin: true
+            }
+        }
+    },
     entry: {
         'common': ['./src/page/common/index.js'],
         'index': ['./src/page/index/index.js'],
@@ -48,6 +58,15 @@ var config = {
                 use: 'url-loader?limit=100&name=resource/[name].[ext]'
             }
         ]
+    },
+    resolve: {
+        alias: {
+            util: __dirname + '/src/util',
+            page: __dirname + '/src/page',
+            service: __dirname + '/src/service',
+            image: __dirname + '/src/image',
+            node_modules: __dirname + '/node_modules'
+        }
     },
     plugins: [
         // 独立通用模块到js/base.js
