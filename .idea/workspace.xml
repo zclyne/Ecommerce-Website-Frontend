@@ -2,19 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5cf1d221-622d-40bd-95e6-ae932a4af6bd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/page/common/header/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/common/header/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/common/nav-side/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/common/nav-side/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/common/nav-side/index.string" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/result/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/result/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/layout/header.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/layout/nav-side.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/result.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page/user-login/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page/user-pass-reset/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page/user-pass-reset/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page/user-register/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page/user-register/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/user-pass-reset.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/user-register.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/index/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/common/nav/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/common/nav/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/user-login/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/user-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/user-service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/mm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/mm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/user-login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/result.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/result.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -28,38 +29,56 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/page/result/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/page/result/index.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/view/result.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webpack.config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-165">
-              <caret line="38" column="48" lean-forward="true" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
+            <state relative-caret-position="555">
+              <caret line="90" column="68" selection-start-line="90" selection-start-column="68" selection-end-line="90" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/page/user-pass-reset/index.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="49" column="7" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/page/user-pass-reset/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="566">
+              <caret line="83" column="35" selection-start-line="83" selection-start-column="22" selection-end-line="83" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/view/user-pass-reset.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="50" column="45" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/service/user-service.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="668">
+              <caret line="55" column="36" selection-start-line="55" selection-start-column="36" selection-end-line="55" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/view/result.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -81,6 +100,8 @@
       <find>background</find>
       <find>hogan</find>
       <find>text-deco</find>
+      <find>user-login</find>
+      <find>user-label</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -96,7 +117,6 @@
         <option value="$PROJECT_DIR$/src/page/index/index.css" />
         <option value="$PROJECT_DIR$/dist/view/index.html" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/src/util/mm.js" />
         <option value="$PROJECT_DIR$/src/view/layout/html-head.html" />
         <option value="$PROJECT_DIR$/src/view/layout/head-common.html" />
         <option value="$PROJECT_DIR$/src/view/layout/nav-simple.html" />
@@ -106,9 +126,7 @@
         <option value="$PROJECT_DIR$/src/page/common/nav/index.css.js" />
         <option value="$PROJECT_DIR$/src/page/common/nav/index.css" />
         <option value="$PROJECT_DIR$/src/view/layout/nav.html" />
-        <option value="$PROJECT_DIR$/src/service/user-service.js" />
         <option value="$PROJECT_DIR$/src/service/cart-service.js" />
-        <option value="$PROJECT_DIR$/src/page/common/nav/index.js" />
         <option value="$PROJECT_DIR$/src/page/common/index.js" />
         <option value="$PROJECT_DIR$/src/view/layout/footer.html" />
         <option value="$PROJECT_DIR$/src/page/common/footer/index.css" />
@@ -122,10 +140,22 @@
         <option value="$PROJECT_DIR$/src/page/common/nav-side/index.js" />
         <option value="$PROJECT_DIR$/src/page/common/nav-side/index.css" />
         <option value="$PROJECT_DIR$/src/page/index/index.js" />
-        <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/src/page/result/index.css" />
-        <option value="$PROJECT_DIR$/src/view/result.html" />
         <option value="$PROJECT_DIR$/src/page/result/index.js" />
+        <option value="$PROJECT_DIR$/src/util/mm.js" />
+        <option value="$PROJECT_DIR$/src/page/user-login/index.js" />
+        <option value="$PROJECT_DIR$/src/view/user-login.html" />
+        <option value="$PROJECT_DIR$/src/page/user-login/index.css" />
+        <option value="$PROJECT_DIR$/src/view/user-register.html" />
+        <option value="$PROJECT_DIR$/src/page/user-register/index.js" />
+        <option value="$PROJECT_DIR$/src/page/common/nav/index.js" />
+        <option value="$PROJECT_DIR$/dist/js/index.js" />
+        <option value="$PROJECT_DIR$/webpack.config.js" />
+        <option value="$PROJECT_DIR$/src/page/user-pass-reset/index.css" />
+        <option value="$PROJECT_DIR$/src/page/user-pass-reset/index.js" />
+        <option value="$PROJECT_DIR$/src/view/user-pass-reset.html" />
+        <option value="$PROJECT_DIR$/src/service/user-service.js" />
+        <option value="$PROJECT_DIR$/src/view/result.html" />
       </list>
     </option>
   </component>
@@ -153,29 +183,6 @@
             <path>
               <item name="Ecommerce Website Frontend" type="b2602c69:ProjectViewProjectNode" />
               <item name="Ecommerce Website Frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ecommerce Website Frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ecommerce Website Frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ecommerce Website Frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ecommerce Website Frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-              <item name="resource" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ecommerce Website Frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ecommerce Website Frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ecommerce Website Frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ecommerce Website Frontend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -189,7 +196,14 @@
               <item name="Ecommerce Website Frontend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="page" type="462c0819:PsiDirectoryNode" />
-              <item name="result" type="462c0819:PsiDirectoryNode" />
+              <item name="user-login" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ecommerce Website Frontend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ecommerce Website Frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+              <item name="user-pass-reset" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Ecommerce Website Frontend" type="b2602c69:ProjectViewProjectNode" />
@@ -214,7 +228,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/page/common/nav-side" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/page/user-register" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -229,6 +243,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/page/user-register" />
       <recent name="$PROJECT_DIR$/src/page/common/nav-side" />
       <recent name="$PROJECT_DIR$/src/image" />
     </key>
@@ -255,12 +270,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1565626492413</updated>
-      <workItem from="1565626494632" duration="30188000" />
+      <workItem from="1565626494632" duration="42090000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30188000" />
+    <option name="totallyTimeSpent" value="42090000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="989" extended-state="6" />
@@ -307,20 +322,6 @@
         <state relative-caret-position="-2521" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/page/login/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dist/view/login.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -341,13 +342,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="24" column="32" lean-forward="true" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/layout/head-common.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="50" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
         </state>
       </provider>
     </entry>
@@ -372,13 +366,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/layout/nav.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/service/cart-service.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -397,13 +384,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="82" lean-forward="true" selection-start-line="5" selection-start-column="82" selection-end-line="5" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/service/user-service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -449,20 +429,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="62" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/page/common/nav/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="52" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="158" column="4" selection-start-line="158" selection-start-column="4" selection-end-line="158" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -522,13 +488,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/util/mm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="656">
-          <caret line="68" column="4" selection-start-line="68" selection-start-column="4" selection-end-line="68" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/page/index/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -543,17 +502,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+    <entry file="file://$PROJECT_DIR$/src/page/result/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-165">
-          <caret line="38" column="48" lean-forward="true" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/result.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="4" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -564,10 +516,125 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/page/result/index.js">
+    <entry file="file://$PROJECT_DIR$/src/view/layout/head-common.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        <state relative-caret-position="51">
+          <caret line="3" column="50" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/page/user-register/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="1" lean-forward="true" selection-end-line="82" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/user-register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="65" column="48" selection-start-line="65" selection-start-column="48" selection-end-line="65" selection-end-column="48" />
+          <folding>
+            <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/layout/nav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/page/user-register/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1615">
+          <caret line="95" column="9" lean-forward="true" selection-start-line="95" selection-start-column="9" selection-end-line="95" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="548">
+          <caret line="96" column="9" lean-forward="true" selection-start-line="96" selection-start-column="9" selection-end-line="96" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/page/common/nav/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="42" lean-forward="true" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="90" column="68" selection-start-line="90" selection-start-column="68" selection-end-line="90" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/page/user-login/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="33" column="32" lean-forward="true" selection-end-line="71" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/user-login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="72" selection-end-line="46" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/page/user-login/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="42" column="23" lean-forward="true" selection-end-line="82" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/util/mm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/page/user-pass-reset/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="49" column="7" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/user-pass-reset.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="50" column="45" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/page/user-pass-reset/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="566">
+          <caret line="83" column="35" selection-start-line="83" selection-start-column="22" selection-end-line="83" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/service/user-service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="668">
+          <caret line="55" column="36" selection-start-line="55" selection-start-column="36" selection-end-line="55" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/result.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
         </state>
       </provider>
     </entry>

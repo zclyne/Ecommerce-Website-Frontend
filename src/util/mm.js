@@ -64,7 +64,7 @@ var _mm = {
         }
     },
     doLogin: function () { // 统一登录处理，跳转到登录页面，登录后再跳转回来
-        window.location.href = './login.html?redirect=' + encodeURIComponent(window.location.href);
+        window.location.href = './user-login.html?redirect=' + encodeURIComponent(window.location.href);
     },
     goHome: function() { // 跳回主页
         window.location.href = './index.html';
