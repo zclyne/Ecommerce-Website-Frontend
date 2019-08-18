@@ -42,7 +42,7 @@ var nav = {
         });
     },
     loadCartCount: function() { // 加载购物车中商品数量
-        _cart.getCartCount(function() {
+        _cart.getCartCount(function(res) {
             $('.nav .cart-count').text(res || 0);
         }, function(errMsg) {
             $('.nav .cart-count').text(0);

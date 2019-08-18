@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 使用html-loader从layout/head-common.html中加载header，可以避免在多个文件中重复代码 -->
+    <%= require('html-loader!./layout/head-common.html') %>
+    <title><%= htmlWebpackPlugin.options.title %> - happymmall电商平台</title>
+</head>
+
+<body>
+<!-- 引入导航栏 -->
+<%= require('html-loader!./layout/nav.html') %>
+
+<!-- 引入通用头部 -->
+<%= require('html-loader!./layout/header.html') %>
+
+<!-- 面包屑导航 -->
+<div class="crumb">
+    <div class="w">
+        <div class="crumb-con">
+            <a href="./index.html" class="link">MMall</a>
+            <span>></span>
+            <span class="link-text"><%= htmlWebpackPlugin.options.title %></span>
+        </div>
+    </div>
+</div>
+
+<div class="page-wrap w">
+    <!-- 引入侧边导航 -->
+    <%= require('html-loader!./layout/nav-side.html') %>
+    <!-- 有with-nav的内容表示有侧边导航栏 -->
+    <div class="content with-nav">
+        <div class="panel">
+            <div class="panel-title">个人中心</div>
+            <div class="panel-body">
+                <div class="loading"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 引入footer -->
+<%= require('html-loader!./layout/footer.html') %>
+</body>
+</html>

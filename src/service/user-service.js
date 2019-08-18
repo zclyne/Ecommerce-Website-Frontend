@@ -62,6 +62,32 @@ var _user = {
             error: reject
         });
     },
+    updateUserInfo: function(userInfo, resolve, reject) { // 更新用户信息
+        _mm.request({
+            url: _mm.getServerUrl('/user/update_information.do'),
+            data: userInfo,
+            method: 'POST',
+            success: resolve,
+            error: reject
+        });
+    },
+    getUserInfo: function(resolve, reject) { // 加载用户信息
+        _mm.request({
+            url: _mm.getServerUrl('/user/get_information.do'),
+            method: 'POST',
+            success: resolve,
+            error: reject
+        });
+    },
+    updatePassword: function(userInfo, resolve, reject) { // 登录状态下修改密码
+        _mm.request({
+            url: _mm.getServerUrl('/user/reset_password.do'),
+            method: 'POST',
+            data: userInfo,
+            success: resolve,
+            error: reject
+        });
+    },
     logout: function (resolve, reject) { // 用户退出登录
         _mm.request({
             url: _mm.getServerUrl('/user/logout.do'),
