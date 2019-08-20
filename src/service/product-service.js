@@ -10,6 +10,16 @@ var _product = {
             success: resolve,
             error: reject
         });
+    },
+    getProductDetail: function(productId, resolve, reject) { // 获取商品详细信息
+        _mm.request({
+            url: _mm.getServerUrl('/product/detail.do'),
+            data: {
+                productId: productId
+            },
+            success: resolve,
+            error: reject
+        });
     }
 };
 
