@@ -7,6 +7,7 @@ var _mm = require('util/mm.js');
 var header = {
     init: function() {
         this.bindEvent();
+        this.onLoad();
     },
     onLoad: function() { // 页面加载时，把搜索内容回填到搜索框中
         var keyword = _mm.getUrlParam('keyword');
