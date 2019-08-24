@@ -2,14 +2,13 @@
 
 require('./index.css');
 require('page/common/header/index.js');
-require('page/common/nav/index.js');
+var nav = require('page/common/nav/index.js');
 var _mm = require('util/mm.js');
 var templateIndex = require('./index.string');
 var _cart = require('service/cart-service.js');
 
 var page = {
     data: {
-
     },
     init: function() {
         this.onLoad();
@@ -102,6 +101,34 @@ var page = {
             }
         });
 
+        // 删除选中商品
+        $(document).on('click', '.delete-selected', function() {
+            if (window.confirm('确认要删除选中的商品？')) {
+                var arrProductIds = [];
+                // 找到所有选中的商品，将其id存入数组
+                var $selectedItem = $('.cart-select:checked');
+                for (var i = 0, iLength = $selectedItem.length; i < iLength; i++) {
+                    arrProductIds.push($($selectedItem[i]).parents('.cart-table').data('product-id'));
+                }
+                if (arrProductIds.length) {
+                    _this.deleteCartProduct(arrProductIds.join(',')); // 把数组元素用逗号连接成字符串
+                } else {
+                    _mm.errorTips('您还没有选中要删除的商品');
+                }
+            }
+        });
+
+        // 提交购物车，去结算
+        $(document).on('click', '.btn-submit', function() {
+            // 通过总价来判断是否有商品被选中
+            if (_this.data.cartInfo && _this.data.cartInfo.cartTotalPrice > 0) { // 总价大于0，提交
+                // 跳转到订单确认页
+                window.location.href = './confirm.html';
+            } else {
+                _mm.errorTips('请选择商品后再提交');
+            }
+        });
+
     },
     loadCart: function() { // 加载购物车信息
         var _this = this;
@@ -119,6 +146,8 @@ var page = {
         // 生成html
         var cartHtml = _mm.renderHtml(templateIndex, data);
         $('.page-wrap').html(cartHtml);
+        // 通知导航栏上的购物车更新商品数量
+        nav.loadCartCount();
     },
     filter: function(data) { // 数据匹配
         // 判断是否为空
