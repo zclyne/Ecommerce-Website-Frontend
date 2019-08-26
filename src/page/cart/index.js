@@ -123,7 +123,7 @@ var page = {
             // 通过总价来判断是否有商品被选中
             if (_this.data.cartInfo && _this.data.cartInfo.cartTotalPrice > 0) { // 总价大于0，提交
                 // 跳转到订单确认页
-                window.location.href = './confirm.html';
+                window.location.href = './order-confirm.html';
             } else {
                 _mm.errorTips('请选择商品后再提交');
             }
