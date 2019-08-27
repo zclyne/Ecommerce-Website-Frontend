@@ -21,7 +21,6 @@ var page = {
         this.onLoad();
     },
     onLoad: function() { // 加载时，显示页面
-        this.loadOrderList();
         navSide.init({ // 初始化左侧菜单
             name: 'order-list'
         });
